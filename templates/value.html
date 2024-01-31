@@ -1,0 +1,163 @@
+<!-- <!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>House Information Form</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .centered-form {
+            text-align: center;
+            margin: 0 auto;
+            width: 50%; /* Adjust the width as needed */
+        }
+
+        .centered-title {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-title">
+        <h1>House Information Form</h1>
+    </div>
+    <div class="centered-form">
+        <form action="/" method="POST">
+            <label for="transaction_date">Transaction Date</label><br>
+            <input type="date" id="transaction_date" name="transaction_date" required><br><br>
+
+            <label for="house_age">House Age (in years)</label><br>
+            <input type="number" id="house_age" name="house_age" required><br><br>
+
+            <label for="distance_mrt">Distance through Nearest MRT (in meters)</label><br>
+            <input type="number" id="distance_mrt" name="distance_mrt" required><br><br>
+
+            <label for="convience_stores">Number of Convenience Stores</label><br>
+            <input type="number" id="convience_stores" name="convience_stores" required><br><br>
+
+            <label for="latitude">Latitude</label> <br>
+            <input type="text" id="latitude" name="latitude" required><br><br>
+
+            <label for="longitude">Longitude</label><br>
+            <input type="text" id="longitude" name="longitude" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Machine Learning Prediction</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .centered-form {
+            text-align: center;
+            margin: 0 auto;
+            width: 50%; /* Adjust the width as needed */
+        }
+
+        .centered-title {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Machine Learning Prediction Form</h1>
+    <form action="/value" method="post" class="centered-form">
+        <label for="a">Transaction Date</label><br>
+        <input type="text" name="X1 transaction date" id="X1 transaction date" required>
+        <br>
+
+        <label for="X2 house age">House Age (in years)</label> <br>
+        <input type="number" name="X2 house age" id="X2 house age" required>
+        <br>
+
+        <label for="X3 distance to the nearest MRT station">Distance through Nearest MRT (in meters)</label> <br>
+        <input type="number" name="X3 distance to the nearest MRT station" id="X3 distance to the nearest MRT station" required>
+        <br>
+
+        <label for="X4 number of convenience stores">Number of Convenience Stores</label> <br>
+        <input type="number" name="X4 number of convenience stores" id="X4 number of convenience stores" required>
+        <br>
+
+        <label for="X5 latitude">Latitude</label><br>
+        <input type="text" name="X5 latitude" id="X5 latitude" required>
+        <br>
+
+        <label for="X6 longitude">Longitude</label> <br>
+        <input type="text" name="X6 longitude" id="X6 longitude" required>
+        <br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if y %}
+    <h2>Predicted Value:</h2>
+    <p>{{ y }}</p>
+    {% endif %}
+</body>
+</html>
+ -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Machine Learning Prediction</title>
+     <style>
+        body {
+            text-align: center;
+        }
+
+        .centered-form {
+            text-align: center;
+            margin: 0 auto;
+            width: 50%; /* Adjust the width as needed */
+        }
+
+        .centered-title {
+            text-align: center;
+        }
+    </style>
+ </head>
+ <body>
+     <h1>Machine Learning Prediction Form</h1>
+     <form action="/value" method="post">
+         <label for="a">Transaction Date</label><br>
+         <input type="text" name="a" id="a" required>
+         <br>
+         <br>
+         <label for="b">House Age (in years)</label><br>
+         <input type="text" name="b" id="b" required>
+         <br>
+         <br>
+         <label for="c">Distance through Nearest MRT (in meters)</label><br>
+         <input type="text" name="c" id="c" required>
+         <br>
+         <br>
+         <label for="d">Number of Convenience Stores</label><br>
+         <input type="text" name="d" id="d" required>
+         <br>
+         <br>
+         <label for="e">Latitude</label><br>
+         <input type="text" name="e" id="e" required>
+         <br>
+        <br>
+         <label for="f">Longitude</label><br>
+         <input type="text" name="f" id="f" required>
+         <br>
+         <br>
+         <input type="submit" value="Predict">
+     </form>
+ 
+     {% if y %}
+     <h2>Predicted Value:</h2>
+     <p>{{ y }}</p>
+     {% endif %}
+ </body>
+ </html>
+ 
